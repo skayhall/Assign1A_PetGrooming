@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N01119610-Assignment1-A", "N01119610-Assignment1-A.csproj", "{20CDC9CF-F44F-4238-860A-A1ADD2E8873C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1A21F66-0AE3-45CF-B8EC-725B8E85E215}"
+	ProjectSection(SolutionItems) = preProject
+		pet_grooming_booking.html = pet_grooming_booking.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20CDC9CF-F44F-4238-860A-A1ADD2E8873C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CDC9CF-F44F-4238-860A-A1ADD2E8873C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CDC9CF-F44F-4238-860A-A1ADD2E8873C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CDC9CF-F44F-4238-860A-A1ADD2E8873C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87E21CD8-311F-45F3-98A0-A99A544ED7B3}
+	EndGlobalSection
+EndGlobal
