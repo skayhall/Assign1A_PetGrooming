@@ -12,7 +12,6 @@
     <form id="form1" runat="server">
         <main>
             <div>
-
                 <h1>Pet Grooming Booking</h1>
                 <section>
                     <h2>Pet Owner Name:</h2>
