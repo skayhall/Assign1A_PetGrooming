@@ -8,58 +8,62 @@
 <body>
 
     <h1>Pet Grooming Booking</h1>
+ 
+     <form method="GET" action="https://postman-echo.com/get">
 
-    <section>
-        <h2>Pet Owner Name</h2>
-        <label>What us your name?</label>
-        <input type="text" id="petowner_name" name="petowner_name" />
-    </section>
+        <section>
+            <h2>Pet Owner Name</h2>
+            <label>What us your name?</label>
+            <input type="text" id="petowner_name" name="petowner_name" />
+        </section>
 
-    <section>
-        <h2>Pet Name</h2>
-        <label>What is your pet's name?</label>
-        <input type="text" id="pet_name" name="pet_name" />
-    </section>
+        <section>
+            <h2>Pet Name</h2>
+            <label>What is your pet's name?</label>
+            <input type="text" id="pet_name" name="pet_name" />
+        </section>
 
-    <section>
-        <h2>Day of Grooming</h2>
-        <label>What day would you like to do the grooming?</label>
-        <div>
-            <input type="radio" id="day_option_1" name="grooming_dayofweek" value="Monday" /><label for="day_option_1">MONDAY</label>
-        </div>
-        <div>
-            <input type="radio" id="day_option_2" name="grooming_dayofweek" value="Tuesday" /><label for="day_option_2">TUESDAY</label>
-        </div>
-        <div>
-            <input type="radio" id="day_option_3" name="grooming_dayofweek" value="Wednesday" /><label for="day_option_3">WEDNESDAY</label>
-        </div>
-        <div>
-            <input type="radio" id="day_option_4" name="grooming_dayofweek" value="Thursday" /><label for="day_option_4">THURSDAY</label>
-        </div>
-        <div>
-            <input type="radio" id="day_option_5" name="grooming_dayofweek" value="Friday" /><label for="day_option_5">FRIDAY</label>
-        </div>
-    </section>
+        <section>
+            <h2>Day of Grooming</h2>
+            <label>What day would you like to do the grooming?</label>
+            <div>
+                <input type="radio" id="day_option_1" name="grooming_dayofweek" value="Monday" /><label for="day_option_1">MONDAY</label>
+            </div>
+            <div>
+                <input type="radio" id="day_option_2" name="grooming_dayofweek" value="Tuesday" /><label for="day_option_2">TUESDAY</label>
+            </div>
+            <div>
+                <input type="radio" id="day_option_3" name="grooming_dayofweek" value="Wednesday" /><label for="day_option_3">WEDNESDAY</label>
+            </div>
+            <div>
+                <input type="radio" id="day_option_4" name="grooming_dayofweek" value="Thursday" /><label for="day_option_4">THURSDAY</label>
+            </div>
+            <div>
+                <input type="radio" id="day_option_5" name="grooming_dayofweek" value="Friday" /><label for="day_option_5">FRIDAY</label>
+            </div>
+        </section>
 
-    <section>
-        <h2>What type of animal do you have?</h2>
-        <select id="animal_type" name="animal_type">
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="Bird">Bird</option>
-        </select>
-    </section>
+        <section>
+            <h2>What type of animal do you have?</h2>
+            <select id="animal_type" name="animal_type">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="Bird">Bird</option>
+            </select>
+        </section>
 
-    <section>
-        <h2>What service would you like?</h2>
+        <section>
+            <h2>What service would you like?</h2>
             <div><input type="checkbox" value="bath" id="service_type_1" name="service_type_1" /><label for="service_type_1">Bath</label></div>
             <div><input type="checkbox" value="grooming" id="service_type_2" name="service_type_2" /><label for="service_type_2">Grooming</label></div>
             <div><input type="checkbox" value="oralcare" id="service_type_3" name="service_type_3" /><label for="service_type_3">Oral Care</label></div>
-    </section>
+        </section>
 
-    <section>
-        <input type="submit" value="submit" />
-    </section>
+        <section>
+            <input type="submit" value="submit" />
+        </section>
+
+    </form>
 
 </body>
 </html>
