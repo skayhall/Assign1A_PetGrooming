@@ -14,12 +14,12 @@
             <div>
                 <h1>Pet Grooming Booking</h1>
                 <section>
-                    <h2>Pet Owner Name:</h2>
+                    <h2>Pet Owner Name</h2>
                     <label>What is your name?</label>
                     <asp:TextBox runat="server" ID="aspx_petowner_name" ></asp:TextBox>
                 </section>
                 <section>
-                    <h2>Pet Name:</h2>
+                    <h2>Pet Name</h2>
                     <label>What is your pet's name?</label>
                     <asp:TextBox runat="server" ID="aspx_pet_name" ></asp:TextBox>
                 </section>
@@ -57,7 +57,6 @@
                 </section>
             </div>
         </main>
-
     </form>
 
 
