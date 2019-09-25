@@ -22,48 +22,57 @@ namespace N01119610_Assignment1_A {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// aspx_petowner_name control.
+        /// petowner_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox aspx_petowner_name;
+        protected global::System.Web.UI.WebControls.TextBox petowner_name;
         
         /// <summary>
-        /// aspx_pet_name control.
+        /// petowner_phone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox aspx_pet_name;
+        protected global::System.Web.UI.WebControls.TextBox petowner_phone;
         
         /// <summary>
-        /// aspx_grooming_dayofweek control.
+        /// pet_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList aspx_grooming_dayofweek;
+        protected global::System.Web.UI.WebControls.TextBox pet_name;
         
         /// <summary>
-        /// aspx_animal_type control.
+        /// grooming_dayofweek control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList aspx_animal_type;
+        protected global::System.Web.UI.WebControls.RadioButtonList grooming_dayofweek;
         
         /// <summary>
-        /// aspx_service_type control.
+        /// animal_type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList aspx_service_type;
+        protected global::System.Web.UI.WebControls.DropDownList animal_type;
+        
+        /// <summary>
+        /// service_amount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox service_amount;
     }
 }

@@ -15,41 +15,73 @@
                 <section>
                     <h2>Pet Owner Name</h2>
                     <label>What is your name?</label>
-                    <asp:TextBox runat="server" ID="aspx_petowner_name" ></asp:TextBox>
+                    <asp:TextBox runat="server" ID="petowner_name" ></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" 
+                        ControlToValidate="petowner_name"
+                        ErrorMessage="Please enter your name."></asp:RequiredFieldValidator>
+                </section>
+                <section>
+                    <% /*
+                        WHERE: https://www.codeproject.com/Questions/1240381/Regular-expression-in-Csharp-for-phone-number
+                        AUTHOR: Unknown
+                        HOW: Searching through Google.
+                        WHY: To validate phone number. It was verified to be successful by other professional developers. 
+                        DATE ACCESSED: September 23, 2019
+                      */%>
+                    <h2>Pet Owner Phone Number</h2>
+                    <label>What is your phone numner?</label>
+                    <asp:TextBox runat="server" ID="petowner_phone"></asp:Textbox>
+                    <asp:RegularExpressionValidator runat="server"
+                        ControlToValidate="petowner_phone" ValidationExpression="/^\+[0-9]{2}[^0-9]*/0/"
+                        ErrorMessage="Please put a phone number."></asp:RegularExpressionValidator>
                 </section>
                 <section>
                     <h2>Pet Name</h2>
                     <label>What is your pet's name?</label>
-                    <asp:TextBox runat="server" ID="aspx_pet_name" ></asp:TextBox>
+                    <asp:TextBox runat="server" ID="pet_name" ></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server"
+                        ControlToValidate="pet_name"
+                        ErrorMessage="Please enter your pet name."></asp:RequiredFieldValidator>
                 </section>
                 <section>
                     <h2>Day of Grooming</h2>
                     <label>What day would you like to do the grooming?</label>
                     <div>
-                        <asp:RadioButtonList runat="server" ID="aspx_grooming_dayofweek">
-                            <asp:ListItem Text="MONDAY" Value="monday"></asp:ListItem>
-                            <asp:ListItem Text="TUESDAY" Value="tuesday"></asp:ListItem>
-                            <asp:ListItem Text="WEDNESDAY" Value="wednesday"></asp:ListItem>
-                            <asp:ListItem Text="THURSDAY" Value="thursday"></asp:ListItem>
-                            <asp:ListItem Text="FRIDAY" Value="Friday"></asp:ListItem>
+                        <asp:RadioButtonList runat="server" ID="grooming_dayofweek">
+                            <asp:ListItem Text="Monday" Value="mon"></asp:ListItem>
+                            <asp:ListItem Text="Tuesday" Value="tue"></asp:ListItem>
+                            <asp:ListItem Text="Wednesday" Value="wed"></asp:ListItem>
+                            <asp:ListItem Text="Thursday" Value="thurs"></asp:ListItem>
+                            <asp:ListItem Text="Friday" Value="fri"></asp:ListItem>
                         </asp:RadioButtonList>
+                        <asp:RequiredFieldValidator runat="server"
+                            ControlToValidate="grooming_dayofweek"
+                            ErrorMessage="Please choose a day of the week"></asp:RequiredFieldValidator>
+                        <asp:
                     </div>
                 </section>
                 <section>
-                    <h2>What type of animal do you have?</h2>
-                    <asp:DropDownList runat="server" ID="aspx_animal_type">
+                    <h2>Animal Type</h2>
+                    <label>What type of animal do you have?</label>
+                    <asp:DropDownList runat="server" ID="animal_type">
                         <asp:ListItem Text="Dog" Value="dog"></asp:ListItem>
                         <asp:ListItem Text="Cat" Value="cat"></asp:ListItem>
                         <asp:ListItem Text="Bird" Value="bird"></asp:ListItem>
                     </asp:DropDownList>
+                    <asp:RequiredFieldValidator runat="server" 
+                        ControlToValidate="animal_type"
+                        ErrorMessage="Please choose an animal type"></asp:RequiredFieldValidator>
                 </section>
                 <section>
-                    <h2>Where service would you like?</h2>
-                    <asp:CheckBoxList ID="aspx_service_type" runat="server">
-                        <asp:ListItem Text="Bath" Value="bath"></asp:ListItem>
-                        <asp:ListItem Text="Grooming" Value="grooming"></asp:ListItem>
-                        <asp:ListItem Text="Oral Care" Value="oralcare"></asp:ListItem>
-                    </asp:CheckBoxList>
+                    <h2>Total Number of Services</h2>
+                    <label>How many services do you need?</label>
+                    <asp:TextBox ID="service_amount" runat="server"></asp:TextBox>
+                    <asp:RangeValidator runat="server" 
+                    ControlToValidate="service_amount"
+                    MinimumValue="1"
+                    MaximumValue="5"
+                    ErrorMessage="Sorry that's too many services. Min 1 service at a time and max 5 services allowed.">
+                    </asp:RangeValidator>
                 </section>
                 <section>
                     <asp:Button runat="server" />
