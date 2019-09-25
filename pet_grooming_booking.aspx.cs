@@ -26,8 +26,8 @@ namespace N01119610_Assignment1_A
                     string Pet_OwnerName = petowner_name.Text.ToString();
                     string Pet_Name = pet_name.Text.ToString();
                     string Grooming_DayofWeek = grooming_dayofweek.SelectedValue.ToString();
-                    string Animal_Tyle = animal_type.SelectedValue.ToString();
-                    int Guest_Friendcount = Convert.ToInt32(guest_friendcount.Text);
+                    string Animal_Type = animal_type.SelectedValue.ToString();
+                    int Services_TotalAmount = Convert.ToInt32(services_amount.Text);
                     string Pet_OwnerPhone = petowner_phone.Text.ToString();
 
                     

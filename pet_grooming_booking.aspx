@@ -75,7 +75,7 @@
                 <section>
                     <h2>Total Number of Services</h2>
                     <label>How many services do you need?</label>
-                    <asp:TextBox ID="service_amount" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="services_amount" runat="server"></asp:TextBox>
                     <asp:RangeValidator runat="server" 
                     ControlToValidate="service_amount"
                     MinimumValue="1"

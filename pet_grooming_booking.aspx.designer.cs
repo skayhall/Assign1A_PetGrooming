@@ -67,12 +67,12 @@ namespace N01119610_Assignment1_A {
         protected global::System.Web.UI.WebControls.DropDownList animal_type;
         
         /// <summary>
-        /// service_amount control.
+        /// services_amount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox service_amount;
+        protected global::System.Web.UI.WebControls.TextBox services_amount;
     }
 }
