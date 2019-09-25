@@ -30,7 +30,7 @@
                       */%>
                     <h2>Pet Owner Phone Number</h2>
                     <label>What is your phone numner?</label>
-                    <asp:TextBox runat="server" ID="petowner_phone"></asp:Textbox>
+                    <asp:TextBox runat="server" ID="petowner_phone"></asp:TextBox>
                     <asp:RegularExpressionValidator runat="server"
                         ControlToValidate="petowner_phone" ValidationExpression="/^\+[0-9]{2}[^0-9]*/0/"
                         ErrorMessage="Please put a phone number."></asp:RegularExpressionValidator>
@@ -38,7 +38,7 @@
                 <section>
                     <h2>Pet Name</h2>
                     <label>What is your pet's name?</label>
-                    <asp:TextBox runat="server" ID="pet_name" ></asp:TextBox>
+                    <asp:TextBox runat="server" ID="pet_name"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server"
                         ControlToValidate="pet_name"
                         ErrorMessage="Please enter your pet name."></asp:RequiredFieldValidator>
@@ -57,7 +57,6 @@
                         <asp:RequiredFieldValidator runat="server"
                             ControlToValidate="grooming_dayofweek"
                             ErrorMessage="Please choose a day of the week"></asp:RequiredFieldValidator>
-                        <asp:
                     </div>
                 </section>
                 <section>
@@ -79,12 +78,21 @@
                     <asp:RangeValidator runat="server" 
                     ControlToValidate="service_amount"
                     MinimumValue="1"
-                    MaximumValue="5"
-                    ErrorMessage="Sorry that's too many services. Min 1 service at a time and max 5 services allowed.">
+                    MaximumValue="3"
+                    ErrorMessage="Sorry that's too many services. Min 1 service needed. Max 3 services allowed.">
                     </asp:RangeValidator>
                 </section>
                 <section>
-                    <asp:Button runat="server" />
+                    <asp:ValidationSummary runat="server" ShowSummary="true" />
+                </section>
+                <section id="confirmbox" runat="server">
+                </section>
+                <section>
+                    <input type="submit" value="submit" />
+                   
+                    <% /* <asp:Button runat="server" />
+                   */ %>
+
                 </section>
             </div>
         </main>

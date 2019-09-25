@@ -18,7 +18,9 @@ namespace N01119610_Assignment1_A
                 Page.Validate();
 
                 if (Page.IsValid)
-                {
+                {  
+
+
 
 
 
@@ -31,33 +33,39 @@ namespace N01119610_Assignment1_A
                     string Pet_OwnerPhone = petowner_phone.Text.ToString();
 
                     
-                    confirmbox.InnerHtml = "Thank you for RSVPing! Your Summary is as follows: <br>";
+                    confirmbox.InnerHtml = "Thank you for booking! Your booking info is: <br>";
 
-                    confirmbox.InnerHtml += " First Name: " + Guest_Fname + "<br>";
-                    confirmbox.InnerHtml += " Last Name: " + Guest_Lname + "<br>";
-                    confirmbox.InnerHtml += " Costume Type: " + Guest_Costumetype + "<br>";
+                    confirmbox.InnerHtml += " Pet Owner Name: " + Pet_OwnerName + "<br>";
+                    confirmbox.InnerHtml += " Pet Name: " + Pet_Name + "<br>";
+                    confirmbox.InnerHtml += " Animal Type: " + Animal_Type + "<br>";
+                    confirmbox.InnerHtml += " Grooming Day " + Grooming_DayofWeek + "<br>";
 
 
 
-                    confirmbox.InnerHtml += " You are bringing " + Guest_Friendcount.ToString() + " friend(s) " + "<br>";
-                    if (Guest_Friendcount == 0)
+                    confirmbox.InnerHtml += " You are booking " +services_amount.ToString() + " service(s) " + "<br>";
+                    if (Services_TotalAmount == 0)
                     {
-                        confirmbox.InnerHtml += "You'll make friends at the party";
+                        confirmbox.InnerHtml += "You need to book atleast one service.";
                     }
 
-                    if (Guest_Friendcount == 1)
+                    if (Services_TotalAmount == 1)
                     {
-                        confirmbox.InnerHtml += "Glad you found a friend!";
+                        confirmbox.InnerHtml += "Great he/she will love their solo treatment!";
                     }
 
-                    if (Guest_Friendcount == 2)
+                    if (Services_TotalAmount == 2)
                     {
-                        confirmbox.InnerHtml += "Three's a crowd, isn't it?";
+                        confirmbox.InnerHtml += "A double - I'm sure he/she will feel special.";
                     }
 
+                    if (Services_TotalAmount == 3)
+                    {
+                        confirmbox.InnerHtml += "Three services. He/She is definetly getting spoiled today!";
+                    } 
 
 
-                    confirmbox.InnerHtml += " We can reach you at: " + Guest_Phone;
+
+                    confirmbox.InnerHtml += " You can be reached by phone at: " + Pet_OwnerPhone;
 
                 }
             }
