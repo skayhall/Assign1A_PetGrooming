@@ -76,7 +76,7 @@
                     <label>How many services do you need?</label>
                     <asp:TextBox ID="services_amount" runat="server"></asp:TextBox>
                     <asp:RangeValidator runat="server" 
-                    ControlToValidate="service_amount"
+                    ControlToValidate="services_amount"
                     MinimumValue="1"
                     MaximumValue="3"
                     ErrorMessage="Sorry that's too many services. Min 1 service needed. Max 3 services allowed.">

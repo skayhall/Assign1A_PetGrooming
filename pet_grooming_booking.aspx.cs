@@ -42,7 +42,7 @@ namespace N01119610_Assignment1_A
 
 
 
-                    confirmbox.InnerHtml += " You are booking " +services_amount.ToString() + " service(s) " + "<br>";
+                    confirmbox.InnerHtml += " You are booking " + Services_TotalAmount.ToString() + " service(s) " + "<br>";
                     if (Services_TotalAmount == 0)
                     {
                         confirmbox.InnerHtml += "You need to book atleast one service.";
@@ -75,7 +75,3 @@ namespace N01119610_Assignment1_A
 
 
 
-
-        }
-    }
-}
